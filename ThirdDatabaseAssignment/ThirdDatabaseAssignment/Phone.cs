@@ -9,6 +9,8 @@ namespace ThirdDatabaseAssignment
     public class Phone
     {
         public int PhoneID { get; set; }
-        public string PhoneNr { get; set; }
+        public string Home { get; set; }
+        public string Cellphone { get; set; }
+        public string Other { get; set; }
     }
 }

@@ -69,6 +69,18 @@
     <Compile Include="Migrations\201611141028586_MyFirstMigration.Designer.cs">
       <DependentUpon>201611141028586_MyFirstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611150900137_SecondMigration.cs" />
+    <Compile Include="Migrations\201611150900137_SecondMigration.Designer.cs">
+      <DependentUpon>201611150900137_SecondMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611151031202_ThirdMigration.cs" />
+    <Compile Include="Migrations\201611151031202_ThirdMigration.Designer.cs">
+      <DependentUpon>201611151031202_ThirdMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611151248468_FourthMigration.cs" />
+    <Compile Include="Migrations\201611151248468_FourthMigration.Designer.cs">
+      <DependentUpon>201611151248468_FourthMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonContext.cs" />
@@ -81,6 +93,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611141028586_MyFirstMigration.resx">
       <DependentUpon>201611141028586_MyFirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611150900137_SecondMigration.resx">
+      <DependentUpon>201611150900137_SecondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611151031202_ThirdMigration.resx">
+      <DependentUpon>201611151031202_ThirdMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611151248468_FourthMigration.resx">
+      <DependentUpon>201611151248468_FourthMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

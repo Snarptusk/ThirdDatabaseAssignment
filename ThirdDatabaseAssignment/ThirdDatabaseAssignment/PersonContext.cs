@@ -10,5 +10,9 @@ namespace ThirdDatabaseAssignment
             : base("name=PersonContext")
         {
         }
+
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Adress> Adresses { get; set; }
+        public DbSet<Phone> Phones { get; set; }
     }
 }
