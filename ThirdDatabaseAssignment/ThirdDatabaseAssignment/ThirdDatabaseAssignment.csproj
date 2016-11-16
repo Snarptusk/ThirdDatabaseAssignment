@@ -58,7 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adress.cs" />
-    <Compile Include="AdressType.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,11 +80,18 @@
     <Compile Include="Migrations\201611151248468_FourthMigration.Designer.cs">
       <DependentUpon>201611151248468_FourthMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611160937279_FifthMigration.cs" />
+    <Compile Include="Migrations\201611160937279_FifthMigration.Designer.cs">
+      <DependentUpon>201611160937279_FifthMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611161144520_SixthMigration.cs" />
+    <Compile Include="Migrations\201611161144520_SixthMigration.Designer.cs">
+      <DependentUpon>201611161144520_SixthMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonContext.cs" />
     <Compile Include="Phone.cs" />
-    <Compile Include="PhoneType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -102,6 +108,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611151248468_FourthMigration.resx">
       <DependentUpon>201611151248468_FourthMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611160937279_FifthMigration.resx">
+      <DependentUpon>201611160937279_FifthMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611161144520_SixthMigration.resx">
+      <DependentUpon>201611161144520_SixthMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -12,5 +12,6 @@ namespace ThirdDatabaseAssignment
         public string Home { get; set; }
         public string Cellphone { get; set; }
         public string Other { get; set; }
+        public virtual Person person { get; set; }
     }
 }

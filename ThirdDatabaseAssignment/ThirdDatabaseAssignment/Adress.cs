@@ -13,5 +13,6 @@ namespace ThirdDatabaseAssignment
         public string Work { get; set; }
         public string Other { get; set; }
         public string City { get; set; }
+        public virtual Person person { get; set; }
     }
 }

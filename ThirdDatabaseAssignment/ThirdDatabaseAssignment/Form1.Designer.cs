@@ -39,18 +39,19 @@
             this.txtPhoneNr2 = new System.Windows.Forms.TextBox();
             this.txtPhoneNr3 = new System.Windows.Forms.TextBox();
             this.grbPhoneNr = new System.Windows.Forms.GroupBox();
+            this.lblOther = new System.Windows.Forms.Label();
+            this.lblCellphone = new System.Windows.Forms.Label();
+            this.lblHome = new System.Windows.Forms.Label();
             this.grbStreetAdress = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtStreetAdress3 = new System.Windows.Forms.TextBox();
             this.txtStreetAdress1 = new System.Windows.Forms.TextBox();
             this.txtStreetAdress2 = new System.Windows.Forms.TextBox();
             this.cmdNew = new System.Windows.Forms.Button();
-            this.lblHome = new System.Windows.Forms.Label();
-            this.lblCellphone = new System.Windows.Forms.Label();
-            this.lblOther = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.cmdDelete = new System.Windows.Forms.Button();
+            this.cmdClear = new System.Windows.Forms.Button();
             this.grbPhoneNr.SuspendLayout();
             this.grbStreetAdress.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +63,7 @@
             this.lstContacts.Name = "lstContacts";
             this.lstContacts.Size = new System.Drawing.Size(127, 225);
             this.lstContacts.TabIndex = 0;
+            this.lstContacts.SelectedIndexChanged += new System.EventHandler(this.lstContacts_SelectedIndexChanged);
             // 
             // lblName
             // 
@@ -147,6 +149,33 @@
             this.grbPhoneNr.TabStop = false;
             this.grbPhoneNr.Text = "Phone Numbers";
             // 
+            // lblOther
+            // 
+            this.lblOther.AutoSize = true;
+            this.lblOther.Location = new System.Drawing.Point(16, 77);
+            this.lblOther.Name = "lblOther";
+            this.lblOther.Size = new System.Drawing.Size(36, 13);
+            this.lblOther.TabIndex = 23;
+            this.lblOther.Text = "Other:";
+            // 
+            // lblCellphone
+            // 
+            this.lblCellphone.AutoSize = true;
+            this.lblCellphone.Location = new System.Drawing.Point(16, 51);
+            this.lblCellphone.Name = "lblCellphone";
+            this.lblCellphone.Size = new System.Drawing.Size(57, 13);
+            this.lblCellphone.TabIndex = 23;
+            this.lblCellphone.Text = "Cellphone:";
+            // 
+            // lblHome
+            // 
+            this.lblHome.AutoSize = true;
+            this.lblHome.Location = new System.Drawing.Point(16, 25);
+            this.lblHome.Name = "lblHome";
+            this.lblHome.Size = new System.Drawing.Size(38, 13);
+            this.lblHome.TabIndex = 17;
+            this.lblHome.Text = "Home:";
+            // 
             // grbStreetAdress
             // 
             this.grbStreetAdress.Controls.Add(this.label3);
@@ -161,6 +190,33 @@
             this.grbStreetAdress.TabIndex = 21;
             this.grbStreetAdress.TabStop = false;
             this.grbStreetAdress.Text = "Street Addresses";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Other:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Work:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Home:";
             // 
             // txtStreetAdress3
             // 
@@ -185,7 +241,7 @@
             // 
             // cmdNew
             // 
-            this.cmdNew.Location = new System.Drawing.Point(145, 214);
+            this.cmdNew.Location = new System.Drawing.Point(145, 112);
             this.cmdNew.Name = "cmdNew";
             this.cmdNew.Size = new System.Drawing.Size(75, 23);
             this.cmdNew.TabIndex = 22;
@@ -193,63 +249,9 @@
             this.cmdNew.UseVisualStyleBackColor = true;
             this.cmdNew.Click += new System.EventHandler(this.cmdNew_Click);
             // 
-            // lblHome
-            // 
-            this.lblHome.AutoSize = true;
-            this.lblHome.Location = new System.Drawing.Point(16, 25);
-            this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(38, 13);
-            this.lblHome.TabIndex = 17;
-            this.lblHome.Text = "Home:";
-            // 
-            // lblCellphone
-            // 
-            this.lblCellphone.AutoSize = true;
-            this.lblCellphone.Location = new System.Drawing.Point(16, 51);
-            this.lblCellphone.Name = "lblCellphone";
-            this.lblCellphone.Size = new System.Drawing.Size(57, 13);
-            this.lblCellphone.TabIndex = 23;
-            this.lblCellphone.Text = "Cellphone:";
-            // 
-            // lblOther
-            // 
-            this.lblOther.AutoSize = true;
-            this.lblOther.Location = new System.Drawing.Point(16, 77);
-            this.lblOther.Name = "lblOther";
-            this.lblOther.Size = new System.Drawing.Size(36, 13);
-            this.lblOther.TabIndex = 23;
-            this.lblOther.Text = "Other:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Home:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Work:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Other:";
-            // 
             // cmdDelete
             // 
-            this.cmdDelete.Location = new System.Drawing.Point(270, 214);
+            this.cmdDelete.Location = new System.Drawing.Point(271, 112);
             this.cmdDelete.Name = "cmdDelete";
             this.cmdDelete.Size = new System.Drawing.Size(75, 23);
             this.cmdDelete.TabIndex = 23;
@@ -257,11 +259,22 @@
             this.cmdDelete.UseVisualStyleBackColor = true;
             this.cmdDelete.Click += new System.EventHandler(this.cmdDelete_Click);
             // 
+            // cmdClear
+            // 
+            this.cmdClear.Location = new System.Drawing.Point(145, 141);
+            this.cmdClear.Name = "cmdClear";
+            this.cmdClear.Size = new System.Drawing.Size(75, 23);
+            this.cmdClear.TabIndex = 24;
+            this.cmdClear.Text = "Clear Fields";
+            this.cmdClear.UseVisualStyleBackColor = true;
+            this.cmdClear.Click += new System.EventHandler(this.cmdClear_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(564, 256);
+            this.Controls.Add(this.cmdClear);
             this.Controls.Add(this.cmdDelete);
             this.Controls.Add(this.cmdNew);
             this.Controls.Add(this.grbStreetAdress);
@@ -310,6 +323,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cmdDelete;
+        private System.Windows.Forms.Button cmdClear;
     }
 }
 
